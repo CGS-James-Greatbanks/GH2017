@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- To get per-household data, divide national data by 9,300,000. Divide state data by 145,200. -->
 <html>
    <head>
    	<title>Distance</title>
@@ -9,11 +10,11 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script src="resources/ext.js"></script>
 	  <script src="main.js"></script>
-
+	 </head>
    <body>
 	   
 	   <div id="loader">
-		   <img src="resources/loading.gif">
+		   <img src="resources/loading.gif" id="loadingImage">
 	   </div>
 	   
 	   <button onclick="aframe()" id="aframeButton">
@@ -37,11 +38,26 @@
 			   <div id="dataDropdown">
 				   <span class="datasetOption" id="petrol" onclick="selectData('petrol', 'Petroleum Products Per Year')">Petroleum Products Per Year</span>
 				   <hr>
-				   <span class="datasetOption" id="vehicles" onclick="selectData('vehicles', 'Vehicles Census Data')">Vehicles Census Data</span>
+				   <span class="datasetOption" id="budget" onclick="selectData('budget', 'ACT Government Budget')">ACT Government Budget</span>
 			   </div>
 			   
 			   <div id="selectedDataset">
 				   No Dataset Selected
+			   </div>
+			   
+			   <div id="otherSelections">
+				   <select id="year" onchange="collateData()">
+				   		<option value="null">select year</option>
+				   </select>
+				   <select id="categories" onchange="collateData()">
+				   		<option value="null">select category</option>
+				   </select>
+			   </div>
+			   
+			   <div id="beginButton">
+				   <button onclick="dataButtonPress()" id="showDataButton">
+					   Show Me The Data!
+				   </button>
 			   </div>
 				 
 		   </div>
@@ -50,14 +66,19 @@
 	   <a-scene id="aFrame">
 		   <a-assets>
 			   <a-asset-item id="barrel" src="resources/final_barrel_small.obj"></a-asset-item>
+			   <a-asset-item id="house" src="resources/basic_house_ready_compatible.obj"></a-asset-item>
 			   <img id="background" src="resources/blue.jpg">
 			</a-assets>
 		   
 			<a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" color="#ed4040"></a-plane>
-		   <a-text position="0 2.3 -2" value="This is the amount of oil we use everyday..." align="center"></a-text>
+		   <a-text position="0 2.3 -2" value="placeholder" align="center"></a-text>
 
-		   <a-entity id="outputArea" position="0 0 -3">
-			   
+		   <a-entity id="outputArea" position="0 0 -6">
+			   <!--<a-obj-model src="#house" postion="0 0 0" color="#1f1f1f"></a-obj-model>-->
+		   </a-entity>
+		   
+		   <a-entity id="mapArea" position="0 0 4">
+			   <!-- Area where the city map will be displayed -->
 		   </a-entity>
 
 		   <a-sky src="#background"></a-sky>
@@ -65,13 +86,3 @@
 	   
    </body>
 </html>
-
-
-
-
-
-
-
-
-
-;
