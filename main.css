@@ -7,6 +7,14 @@ body {
     background-size: cover;
 }
 
+#loader {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	z-index: 999;
+}
+
 #mainTitle {
 	margin-top: 100px;
 	font-weight: 100;
@@ -45,6 +53,7 @@ body {
 	height: 30px;
 	width: 250px;
 }
+
 #introDesc {
 	margin-top: 20px;
 	font-weight: 100;
