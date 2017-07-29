@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -11,44 +12,44 @@
 	  <script src="main.js"></script>
    </head>
    <body>
-	   
+
 	   <button onclick="aframe()" id="aframeButton">
 		   activate A-Frame
 	   </button>
-	   
+
 	   <div id="introScene">
 		   <div id="mainIntro">
 			   <h1 id="mainTitle">
 				   Distance
 			   </h1>
-			   
+
 			   <h3 id="introDesc">
 				   Please select a dataset to visualise in VR
 			   </h3>
-			   
+
 			   <div id="dataSelectionButton" onclick="changeDataset()">
 				   	&#11015;
 			   </div>
-			   
+
 			   <div id="dataDropdown">
 				   <span class="datasetOption" id="petrol" onclick="selectData('petrol', 'Petroleum Products Per Year')">Petroleum Products Per Year</span>
 				   <hr>
 				   <span class="datasetOption" id="vehicles" onclick="selectData('vehicles', 'Vehicles Census Data')">Vehicles Census Data</span>
 			   </div>
-			   
+
 			   <div id="selectedDataset">
 				   No Dataset Selected
 			   </div>
-				 
+
 		   </div>
 	   </div>
-	   
+
 	   <a-scene id="aFrame">
 		   <a-assets>
 			   <a-asset-item id="barrel" src="resources/final_barrel_small.obj"></a-asset-item>
 			   <img id="background" src="resources/blue.jpg">
 			</a-assets>
-		   
+
 			<a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" color="#ed4040"></a-plane>
 		   <a-text position="0 2.3 -2" value="This is the amount of oil we use everyday..." align="center"></a-text>
 
@@ -58,7 +59,7 @@
 
 		   <a-sky src="#background"></a-sky>
 	   </a-scene>
-	   
+
    </body>
 </html>
 

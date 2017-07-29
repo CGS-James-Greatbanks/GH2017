@@ -1,16 +1,16 @@
 $( document ).ready(function() {
-    
+
 	// this func is called when the HTML is loaded & ready to interact with
-	
-	document.getElementById('dataDropdown').style.display = 'none';	
-	
+
+	document.getElementById('dataDropdown').style.display = 'none';
+
 	// ======== becoming less temp code ========
-	
+
 	a=document.getElementById('aFrame');
 	a.style.display = 'none';
-	
+
 	// =========================================
-	
+
 });
 
 var aframeIsDisplayed = false;
@@ -21,14 +21,14 @@ function spread(amount, textArray) {
 	//TODO: get type of object to show, and the text to show.
 	var mainScene = document.querySelector('a-scene');
 	var outputArea = document.querySelector('#outputArea');
-	
+
 	//TODO: move output area depending on what kind of data
-	
+
 	var pyramid = [];
 	var currentRowLen = 1;
 	var rowCounter = 0;
 	for (var i = 0; i < amount; i++) {
-		 
+
 		 if (rowCounter == 0) {
 			  pyramid.push([]);
 		 }
@@ -41,10 +41,10 @@ function spread(amount, textArray) {
 			  rowCounter = 0;
 			  currentRowLen++;
 		 }
-		 
-		 
+
+
 	}
-	 
+
 	if (pyramid[pyramid.length - 1].length <= pyramid[pyramid.length-2].length){
 		var botLength = pyramid[pyramid.length - 1].length
 		var secondLength = pyramid[pyramid.length - 2].length
@@ -60,18 +60,18 @@ function spread(amount, textArray) {
 			 	i += toMinus - 1;
 				toAdd -= toMinus;
 			}
-			 
+
 		}
-		
+
 		for (var i = 0; i < secondLength-botLength + 1; i++){
 			var object = document.createElement("a-obj-model");
 			object.setAttribute("obj-model", {obj: "#barrel"});
 			object.setAttribute("material", {color: "#2b422b"});
 			pyramid[pyramid.length - 1].push(object);
 		}
-		
-		
-		
+
+
+
 	}
 
 	var y = 0
@@ -82,8 +82,8 @@ function spread(amount, textArray) {
 			  var currentObj = currentRow[j];
 			  currentObj.setAttribute('position', {x: j*0.65-halfLength+(0.325), y: y*0.91, z: 0});
 			  outputArea.appendChild(currentObj);
-			  
-			  
+
+
 		 }
 		 y++;
 	}
@@ -91,7 +91,7 @@ function spread(amount, textArray) {
 }
 
 function createPaths() {
-	
+
 }
 
 function selectData(dataset, datasetName) {
@@ -128,7 +128,7 @@ function removeGreenBorder(amount) {
 }
 
 function changeDataset() {
-	
+
 	if (isViewingDataOptions) {
 		document.getElementById('dataDropdown').style.display = 'none';
 		document.getElementById('dataSelectionButton').innerHTML = '&#11015';
@@ -136,7 +136,7 @@ function changeDataset() {
 		document.getElementById('dataDropdown').style.display = 'inline-block';
 		document.getElementById('dataSelectionButton').innerHTML = '&bull;';
 	}
-	
+
 	isViewingDataOptions = !isViewingDataOptions;
 }
 
@@ -152,7 +152,7 @@ function aframe() {
 	} else {
 		a.style.display = "block";
 		introBack.style.display = "none";
-		button.innerHTML = "deactivate A-Frame"; 
+		button.innerHTML = "deactivate A-Frame";
 	}
 	aframeIsDisplayed = !aframeIsDisplayed;
 }
