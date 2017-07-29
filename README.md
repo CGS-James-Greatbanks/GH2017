@@ -10,27 +10,19 @@ Using A-Frame, jQuery, homebrew Blender assets, we have created a web applicatio
 
 ---
 
-### Technologies Used:
+### Datasets
 
-#### Datasets
 <br/>
-
 1) Current population and predicted populations to draw comparisons and extrapolation.
 - (http://stat.data.abs.gov.au//Index.aspx?QueryId=301)
 - (http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3101.0Dec%202016?OpenDocument)
-
----
 
 2) Petroleum usage data over time
 - (http://www.environment.gov.au/energy/publications/petroleum-statistics-may-2017)
 - (https://data.gov.au/dataset/australian-petroleum-statistics)
 
----
-
 3) Electricity usage
 - (https://industry.gov.au/Office-of-the-Chief-Economist/Publications/Pages/Australian-energy-statistics.aspx#)
-
----
 
 4) Crime rates
 - (https://data.gov.au/dataset/nsw-crime-data)
@@ -38,4 +30,16 @@ Using A-Frame, jQuery, homebrew Blender assets, we have created a web applicatio
 
 ---
 
-#### Frameworks
+### Frameworks, Programs and Assets
+
+##### A-Frame
+
+- (https://github.com/aframevr/aframe/)
+
+##### jQuery
+
+- (https://jquery.com/)
+
+##### Blender
+
+- (https://www.blender.org/)
