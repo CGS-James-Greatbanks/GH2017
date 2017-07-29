@@ -48,4 +48,4 @@ For example, when demonstrating how much oil a person consumes in a given timefr
 
 ---
 
-<sup>Written and published by Roan Atkinson, Jack Carey, Madoc Cottle, Ben Daniell, James Greatbanks, Carla Sanfrancesco for the GovHack 2017 Canberra event.</sup>
+<sup>Written and published by Roan Atkinson, Jack Carey, Madoc Cottle, Ben Daniell, James Greatbanks and Carla Sanfrancesco for the GovHack 2017 Canberra event.</sup>
