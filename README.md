@@ -6,7 +6,7 @@
 
 ### Concept:
 
-Using A-Frame, jQuery, homebrew Blender assets, we have created a web application to "physically" represent data in a more comprehensible and visual form. For example, when demonstrating how much oil a person consumes in a given timeframe, Distance uses assets rendered in Blender to visually display the amounts of
+Using A-Frame, jQuery, homebrew Blender assets, we have created a web application to "physically" represent data in a more comprehensible and visual form. For example, when demonstrating how much oil a person consumes in a given timeframe, Distance uses assets rendered in Blender to visually display data from comprehensive and large datasets and making them much more 
 
 ---
 

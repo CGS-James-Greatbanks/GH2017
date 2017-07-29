@@ -1,13 +1,69 @@
+
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Heckermen-17</title>
+   	<title>Distance</title>
       <meta name="description" content="Heckermen's GovHack Project">
+	  <link rel="stylesheet" type="text/css" href="main.css">
       <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="resources/ext.js"></script>
+	  <script src="main.js"></script>
    </head>
    <body>
-      <a-scene>
-         
-      </a-scene>
+	   
+	   <button onclick="aframe()" id="aframeButton">
+		   activate A-Frame
+	   </button>
+	   
+	   <div id="introScene">
+		   <div id="mainIntro">
+			   <h1 id="mainTitle">
+				   Distance
+			   </h1>
+			   <h3 id="introDesc">
+				   Please select a dataset to visualise in VR
+			   </h3>
+			   <!--  -->
+			   <div id="selectedDataset">
+				   
+			   </div>
+			   <!--
+					Dear computer.
+					please make nice website
+					good design and responsive pls
+					from developer
+					ps no bugs
+
+				-->
+				 
+		   </div>
+	   </div>
+	   
+	   <a-scene id="aFrame">
+		   <a-assets>
+			   <a-asset-item id="barrel" src="resources/final_barrel_small.obj"></a-asset-item>
+			   <img id="background" src="resources/blue.jpg">
+		   </a-assets>
+		   <a-plane position="0 0 0" rotation="-90 0 0" width="200" height="200" color="#ed4040"></a-plane>
+		   <a-text position="0 2.3 -2" value="This is the amount of oil we use everyday..." align="center"></a-text>
+
+		   <a-entity id="outputArea">
+			   <a-obj-model src="#barrel" position="0 0 -2" color="#404142" spread></a-obj-model>
+		   </a-entity>
+
+		   <a-sky src="#background"></a-sky>
+	   </a-scene>
+	   
    </body>
 </html>
+
+
+
+
+
+
+
+
+
+;

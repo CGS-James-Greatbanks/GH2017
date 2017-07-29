@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: transparent;
+    background-image: url('resources/background.png');
+    background-size: cover;
+}
+
+#mainTitle {
+	margin-top: 20px;
+	font-weight: 100;
+}
+
+#selectedDataset {
+	margin: 20px auto;
+	padding-top: 5px;
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	height: 30px;
+	width: 250px;
+}
+
+#introDesc {
+	margin-top: 20px;
+	font-weight: 100;
+}
+
+#aframeButton {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 100;
+}
+
+#introScene {
+	background-color: black;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+#mainIntro {
+	background-color: #cccccc;
+	opacity: 1;
+	/*background-color: white;*/
+	height: 500px;
+	width: 950px;
+	border-radius: 50px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 200px;
+	margin: 0 auto;
+}
