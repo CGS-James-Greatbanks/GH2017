@@ -6,13 +6,13 @@
 
 ### Concept:
 
-Using A-Frame, jQuery, homebrew Blender assets, we have created a web application to "physically" represent data in a more comprehensible and visual form. For example, when demonstrating how much oil a person consumes in a given timeframe, Distance uses assets rendered in Blender to visually display data from comprehensive and large datasets and making them much more 
+Using A-Frame, jQuery, homebrew Blender assets, we have created a web application to "physically" represent data in a more comprehensible and visual form. For example, when demonstrating how much oil a person consumes in a given timeframe, Distance uses assets rendered in Blender to visually display data from comprehensive and large datasets and making them much more comprehensible 
 
 ---
 
 ### Datasets
-
 <br/>
+
 1) Current population and predicted populations to draw comparisons and extrapolation.
 - (http://stat.data.abs.gov.au//Index.aspx?QueryId=301)
 - (http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3101.0Dec%202016?OpenDocument)
