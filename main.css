@@ -324,8 +324,10 @@ body {
 
 
 @media only screen and (max-device-width: 736px) and (orientation : portrait) {
+	/*
 	#turnPhone {
 		display: block;
 	}
+	*/
 }
 

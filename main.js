@@ -32,6 +32,12 @@ $(window).on("load", function() {
 		// begin the slide in animation
 		document.getElementById('mainIntro').style.animationName = 'slideIn';
 	}
+	
+	
+	
+	
+	// TEMP
+	document.getElementById('mainIntro').style.zIndex = '10';
 });
 
 
@@ -53,7 +59,7 @@ window.addEventListener(orientationEvent, function() {
 	// if is phone and is portrait
 	if (screen.height <= 736 && screen.height > screen.width) {
 		// hide the mainIntro div
-		document.getElementById('mainIntro').style.zIndex = '-1';
+		//document.getElementById('mainIntro').style.zIndex = '-1';
 	}
 }, false);
 
