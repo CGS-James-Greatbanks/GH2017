@@ -37,15 +37,22 @@ $(window).on("load", function() {
 
 
 
-// create event for resize of media screen (mobile orientation change)
+// create event for resize of media screen (mobile orientation change) detection
 var supportsOrientationChange = "onorientationchange" in window,
     orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 
 window.addEventListener(orientationEvent, function() {
+	// code to be executed on resize
+	
+	// if is phone and is landscape
     if (screen.height <= 736 && screen.width > screen.height) {
+		// show the mainIntro div
 		document.getElementById('mainIntro').style.zIndex = '10';
 	}
+	
+	// if is phone and is portrait
 	if (screen.height <= 736 && screen.height > screen.width) {
+		// hide the mainIntro div
 		document.getElementById('mainIntro').style.zIndex = '-1';
 	}
 }, false);
@@ -203,15 +210,10 @@ function removeGreenBorder(amount) {
 //Handle budget data
 
 function handleBudget(year, category) {
-	 
-	 
-		 var xmlHttp = new XMLHttpRequest();
-		xmlHttp.open("GET", "data/state/financial-by-year/" + year.toString() + ".csv", false);
-		xmlHttp.send(null);
-		budgetSplitByLine(xmlHttp.responseText, category);
-
-		 
-
+	var xmlHttp = new XMLHttpRequest();
+	xmlHttp.open("GET", "data/state/financial-by-year/" + year.toString() + ".csv", false);
+	xmlHttp.send(null);
+	budgetSplitByLine(xmlHttp.responseText, category);
 }
 
 function budgetSplitByLine(responseText, category) {
