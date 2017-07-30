@@ -7,6 +7,19 @@ body {
     background-size: cover;
 }
 
+#turnPhone {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	z-index: 999;
+	display: none;
+}
+
+#rotateImage {
+	height: 100%;
+	width: 100%;
+}
+
 #loader {
 	height: 100%;
 	width: 100%;
@@ -310,7 +323,7 @@ body {
 
 
 
-@media only screen and (max-device-width : 736px) and (orientation : portrait) {
+@media only screen and (max-device-width: 736px) and (orientation : portrait) {
 	#turnPhone {
 		display: block;
 	}
